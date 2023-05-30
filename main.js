@@ -10,7 +10,7 @@ createApp({
     mounted() {
         console.log("caricato");
 
-        for (i=0 ; i<11; i++) {
+        for (i=0 ; i<10; i++) {
         axios.get("https://flynn.boolean.careers/exercises/api/random/mail") 
             .then
             ( (datoindietro) => {

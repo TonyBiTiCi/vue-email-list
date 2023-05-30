@@ -11,7 +11,7 @@
 <body>
 
     <div id="app">
-        <ul>
+        <ol v-if="emailsArray.length === 10">
 
             <li v-for="email in emailsArray">
                 {{
@@ -19,7 +19,9 @@
                 }}
                 
             </li>
-        </ul>
+        </ol>
+
+        <div v-else>NON CARICATO</div>
     </div>
    
     
